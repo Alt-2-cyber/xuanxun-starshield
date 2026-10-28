@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xuanxun-starshield.local/protocol/event.schema.json",
+  "title": "XuanXun StarShield Event",
+  "type": "object",
+  "required": [
+    "protocol_version",
+    "event_id",
+    "robot_id",
+    "source_id",
+    "message_type",
+    "sequence",
+    "device_time_ms",
+    "level",
+    "sensor_values",
+    "trigger_bits"
+  ],
+  "properties": {
+    "protocol_version": { "type": "integer", "const": 1 },
+    "event_id": { "type": "string", "minLength": 1, "maxLength": 64 },
+    "robot_id": { "type": "string", "minLength": 1, "maxLength": 32 },
+    "source_id": { "type": "string", "minLength": 1, "maxLength": 32 },
+    "message_type": {
+      "type": "string",
+      "enum": ["HELLO", "HEARTBEAT", "TELEMETRY", "ALERT", "ACK"]
+    },
+    "sequence": { "type": "integer", "minimum": 0 },
+    "device_time_ms": { "type": "integer", "minimum": 0 },
+    "level": { "type": "string", "enum": ["NORMAL", "P1", "P2", "P3", "CLEARED"] },
+    "sensor_values": {
+      "type": "object",
+      "properties": {
+        "temperature_c": { "type": ["number", "null"] },
+        "smoke_ratio": { "type": ["number", "null"] },
+        "gas_ratio": { "type": ["number", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "trigger_bits": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["TEMP", "SMOKE", "GAS", "VISION"] },
+      "uniqueItems": true
+    },
+    "calibration_id": { "type": ["string", "null"] }
+  },
+  "additionalProperties": false
+}

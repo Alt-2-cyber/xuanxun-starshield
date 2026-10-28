@@ -1,0 +1,24 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#101614"
+    },
+    {
+      "name": "deep_navy",
+      "value": "#EEF2E9"
+    },
+    {
+      "name": "system_blue",
+      "value": "#D8EDAA"
+    },
+    {
+      "name": "review_orange",
+      "value": "#F0A17E"
+    },
+    {
+      "name": "emergency_red",
+      "value": "#E58B79"
+    }
+  ]
+}

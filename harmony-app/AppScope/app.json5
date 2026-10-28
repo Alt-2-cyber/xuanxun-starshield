@@ -1,0 +1,10 @@
+{
+  "app": {
+    "bundleName": "com.xuanxun.starshield",
+    "vendor": "ZHIXUN FIRE",
+    "versionCode": 1000002,
+    "versionName": "1.2.0",
+    "icon": "$media:layered_image",
+    "label": "$string:app_name"
+  }
+}

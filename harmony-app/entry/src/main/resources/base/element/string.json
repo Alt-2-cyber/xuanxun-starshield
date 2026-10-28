@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "智巡消防本地安全端"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "现场安全告警与处置"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "智巡消防"
+    },
+    {
+      "name": "microphone_reason",
+      "value": "用于将现场人员的巡检任务语音转换为文字指令"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dcmitype="http://purl.org/dc/dcmitype/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <dc:title>玄巡·星盾项目技术文档</dc:title>
+  <dc:subject>MicroROS V2 与 HH-D02 星闪双链路地下空间移动消防巡检系统</dc:subject>
+  <dc:creator>玄巡·星盾项目组</dc:creator>
+  <dc:description>项目架构、实现、实验与验收文档</dc:description>
+  <cp:lastModifiedBy>Un-named</cp:lastModifiedBy>
+  <cp:revision>1</cp:revision>
+  <dcterms:created xsi:type="dcterms:W3CDTF">2026-09-21T11:51:50.600Z</dcterms:created>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2026-09-21T11:51:50.601Z</dcterms:modified>
+</cp:coreProperties>

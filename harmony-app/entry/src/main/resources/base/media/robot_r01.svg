@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="80 35 500 355" fill="none">
+  <defs>
+    <linearGradient id="floor" x1="182" y1="206" x2="405" y2="402" gradientUnits="userSpaceOnUse"><stop stop-color="#2A3B2E" stop-opacity=".5"/><stop offset="1" stop-color="#15201A" stop-opacity=".2"/></linearGradient>
+    <linearGradient id="roof" x1="280" y1="105" x2="381" y2="252" gradientUnits="userSpaceOnUse"><stop stop-color="#DEE7CF"/><stop offset="1" stop-color="#8D9C83"/></linearGradient>
+    <linearGradient id="side" x1="220" y1="191" x2="349" y2="301" gradientUnits="userSpaceOnUse"><stop stop-color="#758776"/><stop offset="1" stop-color="#3E5146"/></linearGradient>
+    <linearGradient id="front" x1="366" y1="244" x2="486" y2="229" gradientUnits="userSpaceOnUse"><stop stop-color="#455B4A"/><stop offset="1" stop-color="#283B31"/></linearGradient>
+    <linearGradient id="lime" x1="295" y1="150" x2="385" y2="210" gradientUnits="userSpaceOnUse"><stop stop-color="#E7F5C5"/><stop offset="1" stop-color="#B3CD88"/></linearGradient>
+    <linearGradient id="tire" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3A453F"/><stop offset=".45" stop-color="#17201A"/><stop offset="1" stop-color="#080E0B"/></linearGradient>
+  </defs>
+  <ellipse cx="337" cy="309" rx="205" ry="72" fill="#D8EDAA" opacity=".025"/>
+  <path d="M86 288 323 416 574 279 338 151Z" fill="url(#floor)" stroke="#3C5140" stroke-opacity=".5"/>
+  <g stroke="#344C3A" stroke-opacity=".55" stroke-width="1">
+    <path d="m126 310 250-138m0 272 246-137M166 331 416 194M206 353 456 216M246 375 496 238M286 397 536 260"/>
+    <path d="m126 266 238 128M168 243 406 371M210 220 448 348M252 197 490 325M294 174 532 302"/>
+  </g>
+  <path d="m86 288 31-17m-31 17 31 17m426-43 31 17-30 17M292 399l31 17 31-17" stroke="#7C9665" stroke-width="2"/>
+  <ellipse cx="340" cy="289" rx="153" ry="38" transform="rotate(-8 340 289)" fill="#080E0B" opacity=".65"/>
+  <path d="m183 215 171 98 151-85-171-97Z" fill="#0C1510" stroke="#263C2B" stroke-width="2"/>
+  <g transform="rotate(29 443 251)"><rect x="425" y="220" width="29" height="56" rx="13" fill="#0A100D"/><ellipse cx="451" cy="248" rx="18" ry="28" fill="url(#tire)" stroke="#536255" stroke-width="2"/><ellipse cx="451" cy="248" rx="9" ry="16" fill="#566650"/><ellipse cx="451" cy="248" rx="4" ry="8" fill="#1C2C20"/></g>
+  <g transform="rotate(29 483 226)"><rect x="466" y="197" width="28" height="53" rx="12" fill="#0A100D"/><ellipse cx="491" cy="224" rx="17" ry="27" fill="url(#tire)" stroke="#536255" stroke-width="2"/><ellipse cx="491" cy="224" rx="8" ry="15" fill="#566650"/></g>
+  <path d="m192 174 159 89 142-80-159-89Z" fill="url(#roof)" stroke="#B7C6A8" stroke-width="1.5"/>
+  <path d="m192 174 159 89v44l-159-88Z" fill="url(#side)" stroke="#8C9E82" stroke-width="1.3"/>
+  <path d="m351 263 142-80v46l-142 78Z" fill="url(#front)" stroke="#7D9277" stroke-width="1.3"/>
+  <path d="m199 208 145 81v12l-145-81Z" fill="#24372B"/>
+  <path d="m359 282 128-72v14l-128 71Z" fill="#141F18"/>
+  <path d="m239 152 109 62 105-59-110-62Z" fill="url(#lime)" stroke="#E1EBCB" stroke-width="1.5"/>
+  <path d="m239 152 109 62v32l-109-61Z" fill="#839A6B" stroke="#A4BC8D"/>
+  <path d="m348 214 105-59v32l-105 59Z" fill="#6B8259" stroke="#9EB486"/>
+  <path d="m254 150 88 50 94-53-88-50Z" stroke="#607749" stroke-width="1.5"/>
+  <path d="m271 153 30 17m-24-28 30 17m-24-28 30 17" stroke="#607749" stroke-width="3" stroke-linecap="round"/>
+  <path d="m373 211 58-33v10l-58 33Z" fill="#24382A"/>
+  <path d="m378 211 5-3m6-3 5-3m6-3 5-3m6-3 5-3m6-3 5-3" stroke="#D8EDAA" stroke-width="2"/>
+  <path d="m261 186 49 27v9l-49-27Z" fill="#D8EDAA" opacity=".85"/>
+  <path d="m275 193 7 4m5 3 18 10" stroke="#405336" stroke-width="2"/>
+  <path d="m383 253 61-34v22l-61 34Z" fill="#101A14" stroke="#7D9277"/>
+  <ellipse cx="404" cy="251" rx="8" ry="10" transform="rotate(28 404 251)" fill="#354B3C" stroke="#94A58C" stroke-width="2"/>
+  <ellipse cx="404" cy="251" rx="4" ry="6" transform="rotate(28 404 251)" fill="#B4C9A2"/>
+  <ellipse cx="429" cy="237" rx="4" ry="6" transform="rotate(28 429 237)" fill="#F0A17E"/>
+  <path d="m362 283 13-7v6l-13 7Zm88-50 13-7v6l-13 7Z" fill="#F0A17E"/>
+  <path d="m190 223 159 89 152-85v12l-152 86-159-90Z" fill="#17251C" stroke="#4D6350" stroke-width="1.5"/>
+  <g transform="rotate(-29 220 240)"><rect x="199" y="210" width="27" height="56" rx="11" fill="#0B120E"/><ellipse cx="210" cy="238" rx="20" ry="30" fill="url(#tire)" stroke="#5C6B5D" stroke-width="2"/><ellipse cx="210" cy="238" rx="11" ry="19" fill="#586B53" stroke="#8D9F7F"/><ellipse cx="210" cy="238" rx="4" ry="8" fill="#1B2B20"/><path d="M196 221v10m28 11v10" stroke="#77886B" stroke-width="2"/></g>
+  <g transform="rotate(-29 270 268)"><rect x="249" y="238" width="27" height="56" rx="11" fill="#0B120E"/><ellipse cx="260" cy="266" rx="20" ry="30" fill="url(#tire)" stroke="#5C6B5D" stroke-width="2"/><ellipse cx="260" cy="266" rx="11" ry="19" fill="#586B53" stroke="#8D9F7F"/><ellipse cx="260" cy="266" rx="4" ry="8" fill="#1B2B20"/><path d="M246 249v10m28 11v10" stroke="#77886B" stroke-width="2"/></g>
+  <g transform="rotate(-29 320 296)"><rect x="299" y="266" width="27" height="56" rx="11" fill="#0B120E"/><ellipse cx="310" cy="294" rx="20" ry="30" fill="url(#tire)" stroke="#5C6B5D" stroke-width="2"/><ellipse cx="310" cy="294" rx="11" ry="19" fill="#586B53" stroke="#8D9F7F"/><ellipse cx="310" cy="294" rx="4" ry="8" fill="#1B2B20"/><path d="M296 277v10m28 11v10" stroke="#77886B" stroke-width="2"/></g>
+  <path d="M324 127v21c0 7 37 7 37-1v-20" fill="#3C5142" stroke="#BDCCA8"/>
+  <ellipse cx="342.5" cy="127" rx="18.5" ry="9" fill="#D8EDAA" stroke="#F0F5E5"/>
+  <path d="M326 134c7 5 27 5 33 0" stroke="#9EB789" stroke-width="2"/>
+  <path d="M332 126h21" stroke="#526946" stroke-width="2"/>
+  <path d="M276 111V82" stroke="#89A278" stroke-width="3"/><ellipse cx="276" cy="81" rx="5" ry="3" fill="#D8EDAA"/>
+  <path d="m207 185 7 4m114 64 7 4m31 10 6-3m99-55 6-3" stroke="#DBE6C5" stroke-width="2" stroke-linecap="round"/>
+  <path d="M473 119v-17h-19m-277 40h-19v17M482 309v17h-19" stroke="#769164" stroke-opacity=".75" stroke-width="1.5"/>
+  <path d="m451 157 47-28h36M210 241l-61 34h-25" stroke="#879F72" stroke-opacity=".6" stroke-width="1" stroke-dasharray="4 5"/>
+  <circle cx="451" cy="157" r="3" fill="#D8EDAA"/><circle cx="210" cy="241" r="3" fill="#D8EDAA"/>
+</svg>

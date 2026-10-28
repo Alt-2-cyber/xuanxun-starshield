@@ -1,0 +1,143 @@
+.map-view-actions {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.map-view-toggle {
+  display: flex;
+  align-items: center;
+  background: #101e15;
+  border: 1px solid #3b5131;
+  border-radius: 6px;
+  padding: 2px;
+  gap: 2px;
+}
+.map-view-toggle button {
+  border: 0;
+  padding: 5px 7px;
+  background: transparent;
+  border-radius: 4px;
+  color: #819b72;
+  font:
+    600 9px Manrope,
+    sans-serif;
+  min-height: 25px;
+  min-width: 27px;
+}
+.map-view-toggle button[aria-pressed="true"] {
+  background: #d8edaa;
+  color: #20301a;
+}
+.map-view-toggle button:hover:not([aria-pressed="true"]) {
+  background: #2d4526;
+  color: #d1e7b4;
+}
+.map-stage {
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+  display: grid;
+  place-items: center;
+  perspective: 1100px;
+  isolation: isolate;
+  background:
+    radial-gradient(ellipse at 50% 50%, #344c2f55, transparent 75%), #15231a;
+}
+.map-stage::after {
+  content: "";
+  position: absolute;
+  width: 72%;
+  height: 35%;
+  left: 17%;
+  bottom: 11%;
+  border-radius: 50%;
+  background: #0a160c66;
+  filter: blur(22px);
+  z-index: -1;
+}
+.map-floor {
+  width: 100%;
+  transform: rotateX(30deg) rotateZ(-12deg) scale(0.87);
+  transform-style: preserve-3d;
+  transition: transform 0.65s cubic-bezier(0.2, 0.75, 0.25, 1);
+  border: 1px solid #5f785144;
+  border-radius: 7px;
+  box-shadow:
+    4px 8px 0 #2e422b,
+    7px 14px 0 #253825,
+    8px 25px 32px #0004;
+  overflow: hidden;
+}
+.map-floor svg {
+  display: block;
+  width: 100%;
+  max-height: none;
+  height: auto;
+}
+.map-floor .map-rooms rect {
+  filter: drop-shadow(0 5px 0 #15291a);
+}
+.plan-view .map-floor {
+  transform: rotateX(0deg) rotateZ(0deg) scale(0.95);
+  box-shadow: none;
+  border-color: #39502f;
+}
+.plan-view .map-floor .map-rooms rect {
+  filter: none;
+}
+.twin-map.large .map-stage {
+  min-height: 390px;
+}
+.twin-map .map-waiting {
+  top: 53%;
+}
+.map-floor svg g[role="button"]:hover {
+  filter: brightness(1.4);
+}
+@media (min-width: 1600px) {
+  .map-stage {
+    min-height: 360px;
+  }
+  .twin-map.large .map-stage {
+    min-height: 450px;
+  }
+}
+@media (max-width: 620px) {
+  .map-stage {
+    min-height: 244px;
+  }
+  .twin-map.large .map-stage {
+    min-height: 268px;
+  }
+  .map-floor {
+    width: 107%;
+    transform: rotateX(26deg) rotateZ(-12deg) scale(0.86);
+  }
+  .plan-view .map-floor {
+    width: 100%;
+    transform: scale(0.96);
+  }
+  .map-view-actions {
+    gap: 6px;
+  }
+  .map-view-actions .badge {
+    font-size: 8px;
+  }
+  .map-view-toggle button {
+    padding: 4px 6px;
+    min-height: 24px;
+    font-size: 8px;
+  }
+  .map-title {
+    font-size: 9px;
+  }
+  .map-floor svg {
+    min-height: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .map-floor {
+    transition: none;
+  }
+}

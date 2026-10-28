@@ -1,0 +1,83 @@
+choice
+    prompt "XuanXun StarShield board role"
+    default STARSHIELD_ROLE_R_SENSE
+    depends on SAMPLE_SUPPORT_XUANXUN_STARSHIELD
+
+    config STARSHIELD_ROLE_R_SENSE
+        bool "R-SENSE source and dual UART"
+    config STARSHIELD_ROLE_R_SF
+        bool "R-SF UART to SLE sender"
+    config STARSHIELD_ROLE_R_WIFI
+        bool "R-WIFI UART to Wi-Fi UDP sender"
+    config STARSHIELD_ROLE_C_SF
+        bool "C-SF SLE receiver to UART0"
+    config STARSHIELD_ROLE_C_WIFI
+        bool "C-WIFI SoftAP UDP receiver to UART0"
+endchoice
+
+config STARSHIELD_PINMUX_VERIFIED
+    bool "HH-D02 PinMux physically verified"
+    default n
+
+config STARSHIELD_UART0_TX_PIN
+    int "UART0 TX Pin"
+    default 17
+config STARSHIELD_UART0_RX_PIN
+    int "UART0 RX Pin"
+    default 18
+config STARSHIELD_UART1_TX_PIN
+    int "UART1 TX Pin"
+    default 15
+config STARSHIELD_UART1_RX_PIN
+    int "UART1 RX Pin"
+    default 16
+config STARSHIELD_UART2_TX_PIN
+    int "UART2 TX Pin (WS63E reference: GPIO8)"
+    default 8
+config STARSHIELD_UART2_RX_PIN
+    int "UART2 RX Pin (WS63E reference: GPIO7)"
+    default 7
+
+config STARSHIELD_UART_BAUDRATE
+    int "StarShield UART baud rate"
+    default 115200
+config STARSHIELD_SAMPLE_PERIOD_MS
+    int "R-SENSE sample period in milliseconds"
+    default 1000
+
+config STARSHIELD_LED_DATA_PIN
+    int "SK6805 data GPIO"
+    default 5
+    help
+        HH-D02 uses a single-wire SK6805/SK6812 RGB status LED driven by GPIO5.
+
+config STARSHIELD_LED_MASK
+    int "Role identity LED mask (red=1, green=2, blue=4)"
+    default 2 if STARSHIELD_ROLE_R_SENSE
+    default 1 if STARSHIELD_ROLE_R_SF
+    default 4 if STARSHIELD_ROLE_R_WIFI
+    default 3 if STARSHIELD_ROLE_C_SF
+    default 5 if STARSHIELD_ROLE_C_WIFI
+    default 0
+
+config STARSHIELD_WIFI_STA_SSID
+    string "Wi-Fi station SSID (R-WIFI/C-WIFI)"
+    default ""
+    help
+        SSID used by both Wi-Fi roles. Keep empty until a build-time value is
+        supplied; either role will refuse to connect without credentials.
+
+config STARSHIELD_WIFI_STA_PASSWORD
+    string "Wi-Fi station password (R-WIFI/C-WIFI)"
+    default ""
+    help
+        WPA/WPA2 password used by both Wi-Fi roles. Do not commit a real
+        password to the source tree.
+
+config STARSHIELD_WIFI_PEER_IP
+    string "R-WIFI UDP peer or broadcast IPv4 address"
+    default "10.19.20.255"
+
+config STARSHIELD_WIFI_UDP_PORT
+    int "StarShield UDP port"
+    default 6789
